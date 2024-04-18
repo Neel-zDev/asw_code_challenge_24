@@ -119,11 +119,4 @@ typedef struct {
 
 magnetometer_driver_t magDriver; // declaration of the magnetometer driver instance
 
-
-
-
-
-
-
-
 #endif  //MAGNETOMETER_HEADER_H
