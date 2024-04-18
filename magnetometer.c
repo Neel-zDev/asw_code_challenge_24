@@ -352,11 +352,11 @@ status_mag_t LIS3MDL_readAxisData(uint8_t axisType, uint16_t *axisData) {
 
 
 
-// Create an instance of the Magnetometer driver structure and initialize function pointers
+// initialization of magnetometer inteface with pointer to functions
 magnetometer_driver_t magDriver = {
-    .GetFullScaleConfig  = LIS3MDL_getFullScaleConfig, /**< Pointer to the function for getting the full-scale configuration */
-    .SetOutputDataRate   = LIS3MDL_setOutputDataRate,
-    .GetOutputDataRate   = LIS3MDL_getOutputDataRate,
-    .EnableDisableIntPin = LIS3MDL_enableDisableIntPin,
-    .ReadAxisData        = LIS3MDL_readAxisData
+    .GetFullScaleConfig  = LIS3MDL_getFullScaleConfig,   /* Pointer to the function for getting the full-scale configuration */
+    .SetOutputDataRate   = LIS3MDL_setOutputDataRate,    /* Pointer to the function for setting the output data rate */
+    .GetOutputDataRate   = LIS3MDL_getOutputDataRate,    /* Pointer to the function for getting the output data rate */
+    .EnableDisableIntPin = LIS3MDL_enableDisableIntPin,  /* Pointer to the function for enabling/disabling the interrupt pin */
+    .ReadAxisData        = LIS3MDL_readAxisData          /* Pointer to the function for reading axis data */
 };
