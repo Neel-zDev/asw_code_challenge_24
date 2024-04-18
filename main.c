@@ -27,7 +27,7 @@ void test_ReadAxisData(void);
 
 int main()
 {
-	 // Test LIS3MDL_getFullScaleConfig function for LIS3MDLTR 3-Axis Magnetometer sensor
+    // Test LIS3MDL_getFullScaleConfig function for LIS3MDLTR 3-Axis Magnetometer sensor
     test_GetFullScaleConfig();
     
     // Test LIS3MDL_setOutputDataRate function for LIS3MDLTR 3-Axis Magnetometer sensor
